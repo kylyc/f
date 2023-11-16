@@ -1,0 +1,113 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+<body>
+     <!-- Preloader -->
+     <div class="preloader-bg"></div>
+     <div id="preloader">
+         <div id="preloader-status">
+             <div class="preloader-position loader"> <span></span> </div>
+         </div>
+     </div>
+     <!-- Progress scroll totop -->
+     <div class="progress-wrap cursor-pointer">
+         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+         </svg>
+     </div>
+     <!-- Navbar -->
+     {% include 'include/header.html' %}
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="{% static 'img/merrigarden/banner/1.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left caption mt-90">
+                    <h5><a href="news.html">Новости</a> / Новость 1</h5>
+                    <h1>Новость 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Post -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <img src="{% static 'img/merrigarden/banner/2.jpg' %}" class="mb-30" alt="">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod nobis possimus facere a vel molestiae cumque earum asperiores nemo. Ipsam itaque vero, eos omnis assumenda facilis a eaque. Omnis quae saepe perspiciatis harum quam similique tempore, velit nostrum dolor sequi vel est odio eveniet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod nobis possimus facere a vel molestiae cumque earum asperiores nemo. Ipsam itaque vero, eos omnis assumenda facilis a eaque. Omnis quae saepe perspiciatis harum quam similique tempore, velit nostrum dolor sequi vel est odio eveniet.</p>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod nobis possimus facere a vel molestiae cumque earum asperiores nemo. Ipsam itaque vero, eos omnis assumenda facilis a eaque. Omnis quae saepe perspiciatis harum quam similique tempore, velit nostrum dolor sequi vel est odio eveniet.</p>
+                    </blockquote>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{% static 'img/merrigarden/news/2.jpg' %}" class="mb-30" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="{% static 'img/merrigarden/news/4.jpg' %}" class="mb-30" alt="">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod nobis possimus facere a vel molestiae cumque earum asperiores nemo. Ipsam itaque vero, eos omnis assumenda facilis a eaque. Omnis quae saepe perspiciatis harum quam similique tempore, velit nostrum dolor sequi vel est odio eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">О нас</h3>
+                            <p class="footer-about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias rem cumque id porro delectus?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">Меню</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Бронирование</a></li>
+                                <li><a href="#">Галерея</a></li>
+                                <li><a href="#">Портфолио</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-column footer-contact">
+                            <h3 class="footer-title">Контакты</h3>
+                            <p class="footer-contact-text">Адрес<br>г. Ош
+                            </p>
+                            <div class="footer-contact-info">
+                                <p class="footer-contact-phone"><span class="flaticon-call"></span> 996 555 444 333</p>
+                                <p class="footer-contact-mail">info@MerriGarden.com</p>
+                            </div>
+                            <div class="footer-about-social-list">
+                                <a href="#"><i class="ti-instagram"></i></a>
+                                <a href="#"><i class="ti-twitter"></i></a>
+                                <a href="#"><i class="ti-youtube"></i></a>
+                                <a href="#"><i class="ti-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom-inner">
+                            <p class="footer-bottom-copy-right">© Copyright 2023 by <a href="#">Нурболот</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
